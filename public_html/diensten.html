@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Amarah</title>
+    <meta charset="UTF-8"/>
+    <meta name="description" content="Amarah is een kleinschalige praktijk die kinderen en jongeren op verschillende gebieden begeleidt. Zo verzorgen wij remedial teaching, begeleiding bij dyslexie, huiswerkbegeleiding en cito- en examentraining."/>
+    <meta name="keywords" content="Amarah, Breda, Tilburg, basisschool, middelbare school, kinderen, jongeren, begeleiding, bijles, remedial teaching, RT begeleiding, dyslexie, huiswerkbegeleiding, citotoets, examentraining"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="Copyright" content="Copyright 2015, Amarah. All rights reserved."/>
+    <meta name="Robots" content="All"/>
+    <link rel="stylesheet" href="css/main.css?d=170205"/>
+    <script>
+      var active = 'rt';
+
+      function showDienst(elt) {
+        var id = elt.id;
+
+        if (id === active) {
+          return;
+        }
+
+        document.getElementById(active).classList.remove('active');
+        document.getElementById('dienstuitleg-' + active).classList.remove('active');
+        document.getElementById(id).classList.add('active');
+        document.getElementById('dienstuitleg-' + id).classList.add('active');
+        active = id;
+
+        scroll();
+      }
+
+      function scroll(id) {
+        var parentDiv = document.getElementById('dienstuitleg');
+
+        if (!id) {
+          parentDiv.scrollTop = 0;
+        } else {
+          parentDiv.scrollTop = parentDiv.scrollTop + document.getElementById(id).offsetTop;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div id="container">
+
+      <header>
+        <nav>
+          <div id="logo">
+            <a href="index.html"><img src="img/logo.jpg" alt="Home" title="Home" /></a>
+          </div>
+          <div class="half-circle">
+            <div class="circle"></div>
+          </div>
+          <ul>
+            <li><a href="sfeerimpressie.html">Sfeerimpressie</a></li>
+            <li><a href="diensten.html">Diensten</a></li>
+            <li><a href="tarieven.html">Tarieven</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="content">
+        <div class="balk"><h1>Diensten</h1></div>
+        <div id="dienstenmenu">
+          <ul>
+            <li id="rt" class="active" onclick="showDienst(this)">Remedial Teaching</li>
+            <li id="st" onclick="showDienst(this)">Speltherapie</li>
+          </ul>
+        </div>
+
+        <div id="dienstuitleg">
+          <div class="dienstspan active" id="dienstuitleg-rt">
+            <h2>Remedial Teaching</h2>
+            <h3>Voor kinderen en jongeren</h3>
+
+            Uw kind kan in mijn praktijk terecht voor:
+
+            <ul>
+              <li>Hulp bij <a onclick="scroll('rekenen-lezen-spelling')">rekenen, lezen en spelling</a></li>
+              <li>Hulp bij <a onclick="scroll('dyslexie')">dyslexie</a></li>
+              <li>Hulp bij <a onclick="scroll('studievaardigheden-en-huiswerkplanning')">studievaardigheden en huiswerk(planning)</a></li>
+              <li>Oefenen met <a onclick="scroll('cito-en-examenopgaven')">cito- en examenopgaven</a></li>
+            </ul>
+
+            <h3 id="rekenen-lezen-spelling">Hulp bij rekenen, lezen en spelling</h3>
+            <p>Voor leerlingen van de basisschool verzorg ik specifieke ondersteuning bij problemen met rekenen en taal (lezen en spelling). Ik sluit aan bij de methode die op school gebruikt wordt. Die methode vul ik aan met ondersteunend RT-materiaal.</p>
+            <p>Het streven is om uw kind op het niveau te brengen dat past bij zijn of haar leeftijd en cognitieve capaciteiten. Daarnaast vind ik het erg belangrijk om uw kind het plezier van leren te laten ervaren.</p>
+
+            <h3 id="dyslexie">Hulp bij dyslexie</h3>
+            <p>Voor leerlingen met een dyslexieverklaring bied ik een specifiek leerprogramma aan. Uw kind zal veel oefenen, wat verschillende hersengebieden prikkelt.</p>
+            <p>Ik maak gebruik van verschillende spellingsoefeningen en woordrijen, van RALFI lezen, van flitskaartjes en oefenmateriaal op de computer. Eens in de drie maanden is er een toetsmoment om de voortgang te meten.</p>
+
+            <h3 id="studievaardigheden-en-huiswerkplanning">Hulp bij studievaardigheden en huiswerk(planning)</h3>
+            <p>Het invullen van een planblad geeft structuur aan de manier waarop uw kind zijn huiswerk gaat aanpakken. Naast het plannen krijgt uw kind ruimte om echt aan de slag te gaan met zijn huiswerk. Het gaat hier dus vooral om het leren leren en minder om specifieke bijles op inhoudelijke basis van vakken. Als hier wel behoefte aan is, dan kan hier in overleg ook op worden ingespeeld.</p>
+
+            <h3 id="cito-en-examenopgaven">Oefenen met cito- en examenopgaven</h3>
+            <p>Ik bied een programma aan dat ervoor zorgt dat uw kind goed beslagen ten ijs komt op het moment dat de eindcito of het eindexamen start.</p>
+            <p>Met behulp van toetsen van eerdere jaren raakt uw kind bekend met de vraagstelling, waardoor zenuwen overwonnen kunnen worden.</p>
+            <p>Wilt u meer weten over Remedial Teaching of wilt u gebruik maken van een gratis intake voor uw kind? Neem dan geheel vrijblijvend contact op.</p>
+          </div>
+
+          <div class="dienstspan" id="dienstuitleg-st">
+            <h2>Speltherapie (actief beeldende therapie)</h2>
+            <h3>Voor kinderen en jongeren</h3>
+
+            <p>De actief beeldende therapie is een specifieke vorm binnen de speltherapie. Binnen deze therapie wordt niet alleen gekeken naar het probleem, maar naar uw kind als geheel. Dit maakt deze therapie tot een holistische therapie. Met behulp van verhalen, tekeningen,  bouwwerken en spel vertelt uw kind zijn of haar eigen verhaal. Uw kind hoeft het probleem dus niet te benoemen, praten kan namelijk best ingewikkeld zijn. Uw kind mag zijn of haar verhaal vertellen in een ‘beeldentaal’.</p>
+
+            Uw kind kan in mijn praktijk terecht:
+
+            <ul>
+              <li>Als het lastig is om gevoelens te uiten</li>
+              <li>Als het een nare ervaring heeft meegemaakt, die zorgt voor angst of boosheid</li>
+              <li>Als een diagnose het leven ingewikkeld maakt</li>
+              <li>Voor het leren omgaan met verdriet door een scheiding</li>
+              <li>Als er een belangrijk persoon is overleden</li>
+              <li>Als het omgaan met leeftijdsgenootjes of volwassenen lastig is</li>
+              <li>Bij het leren omgaan met ziekte van zichzelf of een familielid</li>
+              <li>Bij een negatief zelfbeeld</li>
+              <li>Als slapen moeilijk is</li>
+            </ul>
+
+            <p>Als actief beeldend therapeut gebruik ik natuurlijke materialen, zodat uw kind zich op een eigen persoonlijke manier kan uitdrukken. Het doel van de therapie is curatief (genezend) van aard, zodat uw kind  zijn of haar persoonlijke weg kan vervolgen. Vrij van nare gevoelens, angsten of gedrag waarmee het zichzelf belemmert. Dat uw kind weer vrolijk en onbezorgd in het leven kan staan.</p>
+
+            <p>De therapie bestaat uit een drietal fases:</p>
+
+            <p>De diagnose: Via een oudergesprek (anamnese) en 4 tot 6 bijeenkomsten met uw kind wordt het probleem vastgesteld. Deze fase sluit af met een oudergesprek, waarin we de beelden samen bekijken en het plan voor de therapie bespreken.</p>
+
+            <p>De therapie: De inhoud van de therapie is voor ieder kind verschillend en is maatwerk. Het is belangrijk dat de therapie aansluit bij het karakter en het probleem van uw kind. De beelden die uw kind zelf aandraagt zijn leidend. Als Actief Beeldend Therapeut zal ik negatieve beelden door gezonde beelden vervangen. Iedere 6 weken zullen de vorderingen in een oudergesprek besproken worden.
+            De afsluiting: De therapie wordt, op het moment dat uw kind eraan toe is, afgesloten met een oudergesprek.</p>
+
+            <p>Wilt u meer weten over Actief Beeldende Therapie of wilt u gebruik maken van een gratis intake voor uw kind? Neem dan geheel vrijblijvend contact op.</p>
+
+            <p>NB. Ik heb een samenwerkingsverband met Iris Schouten, Pedagoog en Actief Beeldend (Spel)therapeut, Iris kinder-  en jongerenpraktijk.</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="footer">
+        <div id="copyright">&copy; 2015 Amarah. Alle rechten voorbehouden.</div>
+        <div id="crisp">Realisatie door: <a href="www.crispeffect.nl" target="_blank">Crisp Effect</a></div>
+      </div>
+    </div>
+  </body>
+</html>
