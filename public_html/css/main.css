@@ -1,92 +1,165 @@
 /* algemene css */
-  body {
-     font-family: "Century Gothic", Century, Verdana;
-     font-size: 11pt;
-     color: #5d5d5d;
-     max-height: 999999px;
-   }
-  .clear {clear: both;}
-  .emph {
-    color: #651E65;
-    font-weight: 600;
-  }
-  #container {background-color: #fff;  width: 900px; margin: 0 auto; position: relative;}
+body {
+  font-family: "Century Gothic", Century, Verdana;
+  font-size: 11pt;
+  color: #5d5d5d;
+  max-height: 999999px;
+}
+.clear {
+  clear: both;
+}
+.emph {
+  color: #651e65;
+  font-weight: 600;
+}
+#container {
+  background-color: #fff;
+  width: 900px;
+  margin: 0 auto;
+  position: relative;
+}
 
-  header {padding: 0px; height: 100px; width: 900px; margin: 22px auto; position: relative;}
-  #logo {
-    width: 160px;
-    height: 100px;
-    float: left;
-  }
-  #logo img {
-    width: 160px;
-    height: 100px;
-    border: none;
-   }
-  nav {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100px;
-  }
-  nav ul {
-    padding: 38px 0 0 25px;
-    margin: 0 0 0 160px;
-    list-style-type: none;
-    height: 100%;
-    box-sizing: border-box;
-    background-color: #666;
-  }
-  nav ul li {
-    padding: 0;
-    margin: 0 0 0 75px;
-    display: inline;
-    font-size: 17px;
-  }
-  nav ul li a:link, nav ul li a:visited {color: #aeaeae; text-decoration: none;}
-  nav ul li a:hover {color: #fff; text-decoration: none;}
-  nav .half-circle {
-    position: absolute;
-    overflow: hidden;
-    width: 40px;
-    height: 100%;
-    left: 159px;
-  }
-  nav .circle {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    background-color: white;
-    margin: -25px 0 0 -110px;
-  }
+header {
+  padding: 0px;
+  height: 100px;
+  width: 900px;
+  margin: 22px auto;
+  position: relative;
+}
+#logo {
+  width: 160px;
+  height: 100px;
+  float: left;
+}
+#logo img {
+  width: 160px;
+  height: 100px;
+  border: none;
+}
+nav {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100px;
+}
+nav ul {
+  padding: 38px 0 0 25px;
+  margin: 0 0 0 160px;
+  list-style-type: none;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: #666;
+}
+nav ul li {
+  padding: 0;
+  margin: 0 0 0 75px;
+  display: inline;
+  font-size: 17px;
+}
+nav ul li a:link,
+nav ul li a:visited {
+  color: #aeaeae;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+nav .half-circle {
+  position: absolute;
+  overflow: hidden;
+  width: 40px;
+  height: 100%;
+  left: 159px;
+}
+nav .circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: white;
+  margin: -25px 0 0 -110px;
+}
 
-  .content {margin: 0; padding: 10px 0; height: 460px; border: 10px solid #666; position: relative; z-index: 1; background-color: #f0f0f0;}
-  .balk {margin: 20px 0 0 -10px; width: 900px; height: 60px; background-color: #651E65; opacity: 0.8; filter:alpha(opacity=80);}
-  .balk h1 {margin: 0; padding: 15px 0 0 70px; font-size: 23px; font-weight: normal; color: #fff;}
+.content {
+  margin: 0;
+  padding: 10px 0;
+  height: 460px;
+  border: 10px solid #666;
+  position: relative;
+  z-index: 1;
+  background-color: #f0f0f0;
+}
+.balk {
+  margin: 20px 0 0 -10px;
+  width: 900px;
+  height: 60px;
+  background-color: #651e65;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+.balk h1 {
+  margin: 0;
+  padding: 15px 0 0 70px;
+  font-size: 23px;
+  font-weight: normal;
+  color: #fff;
+}
 
-  #copyright {float: left; width: 450px; font-size: 11px; margin: 2px 0 0 0;}
-  #crisp {float: left; text-align: right; width: 450px; font-size: 11px; margin: 2px 0 0 0;}
-  #crisp a:link, #crisp a:visited {color: #666; text-decoration: none; opacity: 0.8;}
-  #crisp a:hover {color: #333; text-decoration: underline;}
+#copyright {
+  float: left;
+  width: 450px;
+  font-size: 11px;
+  margin: 2px 0 0 0;
+}
+#crisp {
+  float: left;
+  text-align: right;
+  width: 450px;
+  font-size: 11px;
+  margin: 2px 0 0 0;
+}
+#crisp a:link,
+#crisp a:visited {
+  color: #666;
+  text-decoration: none;
+  opacity: 0.8;
+}
+#crisp a:hover {
+  color: #333;
+  text-decoration: underline;
+}
 
 /* css voor index.html */
-  #index-content-bg {background: url(../img/index-bg.jpg) no-repeat center #f0f0f0;}
-  #index-balk {margin: 150px 0 0 -10px;}
-  article {margin: 0 0 0 20px; padding: 5px 30px 0 30px; width: 780px; height: 235px; background-color: #fff; opacity: 0.8; filter:alpha(opacity=80); line-height: 19px;}
-  .contact {
-    padding-right: 20px;
-  }
-  .contact a {
-    padding-left: 5px;
-  }
-  .plain-link {
-    color: #5d5d5d;
-    text-decoration: none;
-  }
+#index-content-bg {
+  background: url(../img/index-bg.jpg) no-repeat center #f0f0f0;
+}
+#index-balk {
+  margin: 150px 0 0 -10px;
+}
+article {
+  margin: 0 0 0 20px;
+  padding: 5px 30px 0 30px;
+  width: 780px;
+  height: 235px;
+  background-color: #fff;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+  line-height: 19px;
+}
+.contact {
+  padding-right: 20px;
+}
+.contact a {
+  padding-left: 5px;
+}
+.plain-link {
+  color: #5d5d5d;
+  text-decoration: none;
+}
 
 /* css voor sfeerimpressie.html */
 .slider {
-   list-style:none;
+  list-style: none;
   position: absolute;
   margin: 0 10px;
   padding: 0;
@@ -105,14 +178,14 @@
   margin-left: 376px;
 }
 .slider label {
-  background-color: #651E65;
-  border: 2px solid #651E65;
+  background-color: #651e65;
+  border: 2px solid #651e65;
   border-radius: 50%;
   cursor: pointer;
   display: block;
   height: 10px;
   margin: 2px;
-  transition: .5s;
+  transition: 0.5s;
   width: 10px;
 }
 .slider input:checked + label {
@@ -124,7 +197,7 @@
   opacity: 0;
   position: absolute;
   top: 0;
-  transition: .5s;
+  transition: 0.5s;
   width: 860px;
   vertical-align: top;
   visibility: hidden;
@@ -144,7 +217,7 @@
   padding: 1em 2em;
   position: absolute;
   top: 320px;
-  transition: .5s;
+  transition: 0.5s;
   visibility: hidden;
 }
 .slider li input:checked ~ .image-label {
@@ -152,19 +225,59 @@
   visibility: visible;
 }
 .image-label-left {
-  background: -webkit-linear-gradient(right, rgba(101, 30, 101,0) 0%, rgba(101, 30, 101,0.5) 20%, rgba(101, 30, 101,1) 100%);
-  background: -o-linear-gradient(right, rgba(101, 30, 101,0) 0%, rgba(101, 30, 101,0.5) 20%, rgba(101, 30, 101,1) 100%);
-  background: -moz-linear-gradient(right, rgba(101, 30, 101,0) 0%, rgba(101, 30, 101,0.5) 20%, rgba(101, 30, 101,1) 100%);
-  background: linear-gradient(to left, rgba(101, 30, 101,0) 0%, rgba(101, 30, 101,0.5) 20%, rgba(101, 30, 101,1) 100%);
+  background: -webkit-linear-gradient(
+    right,
+    rgba(101, 30, 101, 0) 0%,
+    rgba(101, 30, 101, 0.5) 20%,
+    rgba(101, 30, 101, 1) 100%
+  );
+  background: -o-linear-gradient(
+    right,
+    rgba(101, 30, 101, 0) 0%,
+    rgba(101, 30, 101, 0.5) 20%,
+    rgba(101, 30, 101, 1) 100%
+  );
+  background: -moz-linear-gradient(
+    right,
+    rgba(101, 30, 101, 0) 0%,
+    rgba(101, 30, 101, 0.5) 20%,
+    rgba(101, 30, 101, 1) 100%
+  );
+  background: linear-gradient(
+    to left,
+    rgba(101, 30, 101, 0) 0%,
+    rgba(101, 30, 101, 0.5) 20%,
+    rgba(101, 30, 101, 1) 100%
+  );
   left: 0;
   padding-right: 4em;
   text-align: left;
 }
 .image-label-right {
-  background: -webkit-linear-gradient(left, rgba(101, 30, 101,0) 0%, rgba(101, 30, 101,0.5) 20%, rgba(101, 30, 101,1) 100%);
-  background: -o-linear-gradient(left, rgba(101, 30, 101,0) 0%, rgba(101, 30, 101,0.5) 20%, rgba(101, 30, 101,1) 100%);
-  background: -moz-linear-gradient(left, rgba(101, 30, 101,0) 0%, rgba(101, 30, 101,0.5) 20%, rgba(101, 30, 101,1) 100%);
-  background: linear-gradient(to right, rgba(101, 30, 101,0) 0%, rgba(101, 30, 101,0.5) 20%, rgba(101, 30, 101,1) 100%);
+  background: -webkit-linear-gradient(
+    left,
+    rgba(101, 30, 101, 0) 0%,
+    rgba(101, 30, 101, 0.5) 20%,
+    rgba(101, 30, 101, 1) 100%
+  );
+  background: -o-linear-gradient(
+    left,
+    rgba(101, 30, 101, 0) 0%,
+    rgba(101, 30, 101, 0.5) 20%,
+    rgba(101, 30, 101, 1) 100%
+  );
+  background: -moz-linear-gradient(
+    left,
+    rgba(101, 30, 101, 0) 0%,
+    rgba(101, 30, 101, 0.5) 20%,
+    rgba(101, 30, 101, 1) 100%
+  );
+  background: linear-gradient(
+    to right,
+    rgba(101, 30, 101, 0) 0%,
+    rgba(101, 30, 101, 0.5) 20%,
+    rgba(101, 30, 101, 1) 100%
+  );
   padding-left: 4em;
   right: 0;
   text-align: right;
@@ -174,143 +287,212 @@
 }
 
 /* css voor diensten.html */
-  #dienstenmenu {
-    margin: 30px 0 0 20px;
-    padding: 0;
-    width: 250px;
-    height: 300px;
-    float: left;
-  }
-  #dienstenmenu ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-  }
-  #dienstenmenu ul li {
-    margin: 0 0 10px 0;
-    padding: 5px 0 0 10px;
-    background-color: #fff;
-    color: #222;
-    opacity: 0.8;
-    width: 200px;
-    height: 27px;
-    cursor: pointer;
-  }
-  #dienstenmenu ul li.active,
-  #dienstenmenu ul li:hover
-  {
-    background-color: #651E65;
-    color: #fff;
-    opacity: 0.8;
-  }
-  #dienstuitleg {
-    margin: 30px 0 0 0px;
-    height: 330px;
-    width: 570px;
-    float: left;
-    overflow: auto;
-    position: relative;
-  }
-  .dienstspan {
-    display: none;
-  }
-  .dienstspan.active {
-    display: block;
-  }
-  #dienstuitleg h2 {
-    margin: 0 0 10px 0;
-    padding: 0;
-    font-size: 11pt;
-  }
-  #dienstuitleg h3 {
-    margin: 0 0 10px 0;
-    padding: 0;
-    font-size: 11pt;
-    font-style: italic;
-  }
-  #dienstuitleg p {margin: 0 0 10px 0; padding: 0;}
-  .contactlink:link, .contactlink:visited {color: #666; text-decoration: underline; opacity: 0.8;}
-  .contactlink:hover {color: #333; text-decoration: underline; opacity: 0.8;}
+#dienstenmenu {
+  margin: 30px 0 0 20px;
+  padding: 0;
+  width: 250px;
+  height: 300px;
+  float: left;
+}
+#dienstenmenu ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+#dienstenmenu ul li {
+  margin: 0 0 10px 0;
+  padding: 5px 0 0 10px;
+  background-color: #fff;
+  color: #222;
+  opacity: 0.8;
+  width: 200px;
+  height: 27px;
+  cursor: pointer;
+}
+#dienstenmenu ul li.active,
+#dienstenmenu ul li:hover {
+  background-color: #651e65;
+  color: #fff;
+  opacity: 0.8;
+}
+#dienstuitleg {
+  margin: 30px 0 0 0px;
+  height: 330px;
+  width: 570px;
+  float: left;
+  overflow: auto;
+  position: relative;
+}
+.dienstspan {
+  display: none;
+}
+.dienstspan.active {
+  display: block;
+}
+#dienstuitleg h2 {
+  margin: 0 0 10px 0;
+  padding: 0;
+  font-size: 11pt;
+}
+#dienstuitleg h3 {
+  margin: 0 0 10px 0;
+  padding: 0;
+  font-size: 11pt;
+  font-style: italic;
+}
+#dienstuitleg p {
+  margin: 0 0 10px 0;
+  padding: 0;
+}
+.contactlink:link,
+.contactlink:visited {
+  color: #666;
+  text-decoration: underline;
+  opacity: 0.8;
+}
+.contactlink:hover {
+  color: #333;
+  text-decoration: underline;
+  opacity: 0.8;
+}
 
-  #dienstuitleg li a{
-    color: #651e65;
-    text-decoration: none;
-    opacity: 0.8;
-    cursor: pointer;
-  }
+#dienstuitleg li a {
+  color: #651e65;
+  text-decoration: none;
+  opacity: 0.8;
+  cursor: pointer;
+}
 
 /* css voor tarieven.html */
-  .content table {margin: 30px 0 0 25px; padding: 0; width: 600px; text-align: left;}
-  .actual-content {
-    margin: 30px;
-    height: 330px;
-    width: 820px;
-  }
-  .col1 {margin: 0; padding: 0 0 0 62px; width: 150px; height: 28px; background: url(../img/aanwijzer.jpg) no-repeat;}
-  .col2 {margin: 0; padding: 0; width: 100px; height: 28px;}
-  #onderschrift {margin: 20px 0 0 62px;}
+.content table {
+  margin: 30px 0 0 25px;
+  padding: 0;
+  width: 600px;
+  text-align: left;
+}
+.actual-content {
+  margin: 30px;
+  height: 330px;
+  width: 820px;
+}
+.col1 {
+  margin: 0;
+  padding: 0 0 0 62px;
+  width: 150px;
+  height: 28px;
+  background: url(../img/aanwijzer.jpg) no-repeat;
+}
+.col2 {
+  margin: 0;
+  padding: 0;
+  width: 100px;
+  height: 28px;
+}
+#onderschrift {
+  margin: 20px 0 0 62px;
+}
 
-  .half {
-    box-sizing: border-box;
-    border-left: 1px dotted #aaa;
-    display: flex;
-    flex-direction: column;
-    float: left;
-    justify-content: space-between;
-    padding: 30px;
-    height: 390px;
-    width: 50%;
-  }
+.half {
+  box-sizing: border-box;
+  border-left: 1px dotted #aaa;
+  display: flex;
+  flex-direction: column;
+  float: left;
+  justify-content: space-between;
+  padding: 30px;
+  height: 390px;
+  width: 50%;
+}
 
-  .tarieven h3 {
-    margin-bottom: 0.5em;
-  }
+.tarieven h3 {
+  margin-bottom: 0.5em;
+}
 
-  .tarieven ul {
-    margin: 1em 0 1.5em 0;
-    padding: 0 1em;
-    list-style: none;
-  }
+.tarieven ul {
+  margin: 1em 0 1.5em 0;
+  padding: 0 1em;
+  list-style: none;
+}
 
-  .tarieven li {
-    margin-left: 1em;
-  }
+.tarieven li {
+  margin-left: 1em;
+}
 
-  .tarieven li span.tarief-naam {
-    display: inline-block;
-    width: 250px;
-  }
+.tarieven li span.tarief-naam {
+  display: inline-block;
+  width: 250px;
+}
 
-  .tarieven li span.tarief-prijs {
-    float: right;
-  }
+.tarieven li span.tarief-prijs {
+  float: right;
+}
 
-  .tarieven li:before {
-    content: "";
-    border-color: transparent #651e65;
-    border-style: solid;
-    border-width: 0.4em 0 0.4em 0.5em;
-    display: block;
-    height: 0;
-    width: 0;
-    left: -1em;
-    top: 0.9em;
-    position: relative;
-  }
+.tarieven li:before {
+  content: "";
+  border-color: transparent #651e65;
+  border-style: solid;
+  border-width: 0.4em 0 0.4em 0.5em;
+  display: block;
+  height: 0;
+  width: 0;
+  left: -1em;
+  top: 0.9em;
+  position: relative;
+}
 
-  /* .tarieven p {
+/* .tarieven p {
     text-align: justify;
   } */
 
 /* css voor contact.html */
-  #contactinfo {margin: 20px 0 0 30px; padding: 0; width: 820px; text-align: center;}
-  #contactinfo a:link, #contactinfo a:visited {color: #A330A3; text-decoration: none;}
-  #contactinfo a:hover {color: #A330A3; text-decoration: underline;}
+#contactinfo {
+  margin: 20px 0 0 30px;
+  padding: 0;
+  width: 820px;
+  text-align: center;
+}
+#contactinfo a:link,
+#contactinfo a:visited {
+  color: #a330a3;
+  text-decoration: none;
+}
+#contactinfo a:hover {
+  color: #a330a3;
+  text-decoration: underline;
+}
 
-  #locaties {margin: 0; padding: 20px 0 0 0; display: block; height: 220px;}
-  .locaties {margin: 0 auto; /*margin: 20px 0 0 30px;*/ padding: 0; width: 375px; height: 200px; /*float: left;*/ display: block;}
-  .locaties:link , .locaties:visited {border: 10px solid #ddd;}
-  .locaties:hover {border: 10px solid #fff;}
+#locaties {
+  margin: 0;
+  padding: 20px 0 0 0;
+  display: block;
+  height: 220px;
+}
+.locaties {
+  margin: 0 auto; /*margin: 20px 0 0 30px;*/
+  padding: 0;
+  width: 375px;
+  height: 200px; /*float: left;*/
+  display: block;
+}
+.locaties:link,
+.locaties:visited {
+  border: 10px solid #ddd;
+}
+.locaties:hover {
+  border: 10px solid #fff;
+}
 
-  #gegevens {margin: 0; padding: 0; display: block; height: 95px;}
-  .gegevens {margin: 0 auto; /*margin: 5px 0 0 30px;*/ padding: 0; width: 375px; height: 95px; /*float: left;*/ display: block; text-align: center;}
+#gegevens {
+  margin: 0;
+  padding: 0;
+  display: block;
+  height: 95px;
+}
+.gegevens {
+  margin: 0 auto; /*margin: 5px 0 0 30px;*/
+  padding: 0;
+  width: 375px;
+  height: 95px; /*float: left;*/
+  display: block;
+  text-align: center;
+}

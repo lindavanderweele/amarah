@@ -2,32 +2,46 @@
 <html>
   <head>
     <title>Amarah</title>
-    <meta charset="UTF-8"/>
-    <meta name="description" content="Amarah is een kleinschalige praktijk die kinderen en jongeren op verschillende gebieden begeleidt. Zo verzorgen wij remedial teaching, begeleiding bij dyslexie, huiswerkbegeleiding en cito- en examentraining."/>
-    <meta name="keywords" content="Amarah, Breda, Tilburg, basisschool, middelbare school, kinderen, jongeren, begeleiding, bijles, remedial teaching, RT begeleiding, dyslexie, huiswerkbegeleiding, citotoets, examentraining"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <meta name="Copyright" content="Copyright 2015, Amarah. All rights reserved."/>
-    <meta name="Robots" content="All"/>
-    <link rel="stylesheet" href="css/main.css?d=170205"/>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Amarah is een kleinschalige praktijk die kinderen en jongeren op verschillende gebieden begeleidt. Zo verzorgen wij remedial teaching, begeleiding bij dyslexie, huiswerkbegeleiding en cito- en examentraining."
+    />
+    <meta
+      name="keywords"
+      content="Amarah, Breda, Tilburg, basisschool, middelbare school, kinderen, jongeren, begeleiding, bijles, remedial teaching, RT begeleiding, dyslexie, huiswerkbegeleiding, citotoets, examentraining"
+    />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="Copyright"
+      content="Copyright 2015, Amarah. All rights reserved."
+    />
+    <meta name="Robots" content="All" />
+    <link rel="stylesheet" href="css/main.css?d=170205" />
     <script>
-      var checkboxes = ['RT0', 'RT1', 'RT2', 'ST0', 'ST1', 'ST2'];
+      var checkboxes = ["RT0", "RT1", "RT2", "ST0", "ST1", "ST2"];
       var skip = false;
-      
-      document.onreadystatechange = function() {
-        if (document.readyState === 'complete') {
-          setInterval(function() {
+
+      document.onreadystatechange = function () {
+        if (document.readyState === "complete") {
+          setInterval(function () {
             if (skip) {
               skip = false;
               return;
             }
-          
-            var currentCheckbox = document.querySelector('input[name="slide"]:checked').value;
-            var nextCheckbox = checkboxes[(checkboxes.indexOf(currentCheckbox) + 1) % checkboxes.length];
+
+            var currentCheckbox = document.querySelector(
+              'input[name="slide"]:checked'
+            ).value;
+            var nextCheckbox =
+              checkboxes[
+                (checkboxes.indexOf(currentCheckbox) + 1) % checkboxes.length
+              ];
             document.getElementById(nextCheckbox).click();
           }, 5000);
         }
       };
-      
+
       function labelClicked() {
         skip = true;
       }
@@ -38,7 +52,9 @@
       <header>
         <nav>
           <div id="logo">
-            <a href="index.html"><img src="img/logo.jpg" alt="Home" title="Home" /></a>
+            <a href="index.html"
+              ><img src="img/logo.jpg" alt="Home" title="Home"
+            /></a>
           </div>
           <div class="half-circle">
             <div class="circle"></div>
@@ -54,7 +70,7 @@
       <div class="content">
         <ul class="slider">
           <li>
-            <input type="radio" id="RT0" name="slide" value="RT0" checked>
+            <input type="radio" id="RT0" name="slide" value="RT0" checked />
             <label for="RT0" onclick="labelClicked()"></label>
             <img src="img/RT0.jpg" />
             <div class="image-label image-label-left">
@@ -62,26 +78,26 @@
             </div>
           </li>
           <li>
-            <input type="radio" id="RT1" name="slide" value="RT1">
+            <input type="radio" id="RT1" name="slide" value="RT1" />
             <label for="RT1" onclick="labelClicked()"></label>
             <img src="img/RT1.jpg" />
             <div class="image-label image-label-right">
-              Dankzij de hulp van Linda ging mijn<br/>
+              Dankzij de hulp van Linda ging mijn<br />
               examen wiskunde supergoed.
             </div>
           </li>
           <li>
-            <input type="radio" id="RT2" name="slide" value="RT2">
+            <input type="radio" id="RT2" name="slide" value="RT2" />
             <label for="RT2" onclick="labelClicked()"></label>
             <img src="img/RT2.jpg" />
             <div class="image-label image-label-left image-label-long">
-              Mijn zoon en ik zijn super blij met jouw RT.<br/>
-              Nogmaals bedankt voor de goede en fijne<br/>
+              Mijn zoon en ik zijn super blij met jouw RT.<br />
+              Nogmaals bedankt voor de goede en fijne<br />
               begeleiding die jij aan mijn zoon hebt gegeven.
             </div>
           </li>
           <li>
-            <input type="radio" id="ST0" name="slide" value="ST0">
+            <input type="radio" id="ST0" name="slide" value="ST0" />
             <label for="ST0" onclick="labelClicked()"></label>
             <img src="img/ST0.jpg" />
             <div class="image-label image-label-right">
@@ -89,20 +105,20 @@
             </div>
           </li>
           <li>
-            <input type="radio" id="ST1" name="slide" value="ST1">
+            <input type="radio" id="ST1" name="slide" value="ST1" />
             <label for="ST1" onclick="labelClicked()"></label>
             <img src="img/ST1.jpg" />
             <div class="image-label image-label-left">
-              Linda is heel lief en je mag alles gebruiken om<br/>
+              Linda is heel lief en je mag alles gebruiken om<br />
               mee te spelen. Ze heeft veel leuke spullen.
             </div>
           </li>
           <li>
-            <input type="radio" id="ST2" name="slide" value="ST2">
+            <input type="radio" id="ST2" name="slide" value="ST2" />
             <label for="ST2" onclick="labelClicked()"></label>
             <img src="img/ST2.jpg" />
             <div class="image-label image-label-right">
-              Iedere week ging mijn dochter met veel plezier naar Linda.<br/>
+              Iedere week ging mijn dochter met veel plezier naar Linda.<br />
               Wij als ouders vonden de oudergesprekken heel waardevol.
             </div>
           </li>
@@ -113,7 +129,10 @@
       </div>
       <div id="footer">
         <div id="copyright">&copy; 2015 Amarah. Alle rechten voorbehouden.</div>
-        <div id="crisp">Realisatie door: <a href="www.crispeffect.nl" target="_blank">Crisp Effect</a></div>
+        <div id="crisp">
+          Realisatie door:
+          <a href="www.crispeffect.nl" target="_blank">Crisp Effect</a>
+        </div>
       </div>
     </div>
   </body>
