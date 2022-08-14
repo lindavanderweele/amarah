@@ -398,10 +398,13 @@ article {
   display: flex;
   flex-direction: column;
   float: left;
-  justify-content: space-between;
   padding: 30px;
   height: 390px;
   width: 50%;
+}
+
+.space-between {
+  justify-content: space-between;
 }
 
 .tarieven h3 {
@@ -495,4 +498,22 @@ article {
   height: 95px; /*float: left;*/
   display: block;
   text-align: center;
+}
+
+address {
+  font-style: normal;
+  padding-left: 30px;
+}
+
+address h4 {
+  margin-bottom: 0.6em;
+}
+
+address + address {
+  margin-top: 2em;
+}
+
+address a {
+  display: block;
+  margin-top: 0.4em;
 }
